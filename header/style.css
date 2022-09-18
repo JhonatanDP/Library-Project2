@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/Inter-VariableFont_slnt,wght.ttf");
+}
+* {
+  font-family: "Inter";
+  box-sizing: border-box;
+}
+
+body {
+  --page-mg-block: 100px;
+  margin: 28px var(--page-mg-block);
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  height: 100%;
+  box-sizing: content-box;
+  flex-basis: 50%;
+}
+main > div {
+  width: 100%;
+}
+main .right-image {
+  position: relative;
+  height: 100%;
+}
+main .right-image img {
+  /* height: 100vh; */
+  position: fixed;
+  z-index: -1;
+  /* width: 786px; */
+  width: 50%;
+  height: 100%;
+  /* height: 1024px; */
+  /* left: 655px; */
+  top: 0px;
+  background: linear-gradient(0deg, rgba(74, 74, 74, 0.2), rgba(74, 74, 74, 0.2)), url(.jpg);
+  background-size: cover;
+}
+main .right-image p {
+  position: absolute;
+  width: 570px;
+  bottom: 0px;
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 52px;
+  color: #efefef;
+}
+main .login-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 139px;
+  margin-left: calc(var(--page-mg-block) * -1);
+  padding: 0 100px;
+  /* width: 100%; */
+}
+main .login-wrapper button {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding-block: 14px;
+  border: 1px solid #DBDBDB;
+  border-radius: 5px;
+}
+main .login-wrapper button .google-icon {
+  width: 28px;
+}
+main .login-wrapper .or-container {
+  --color: #ababab;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+main .login-wrapper .or-container p {
+  font-size: 20px;
+  text-align: center;
+  background-color: white;
+  width: 54px;
+  color: var(--color);
+}
+main .login-wrapper .or-container::before {
+  display: block;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: calc(50% + 1px);
+  transform: translateY(-50%);
+  background-color: var(--color);
+  height: 1px;
+  width: 100%;
+}
+main .login-wrapper h1 {
+  width: 100%;
+}
+main .login-wrapper .inputs-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 14px;
+}
+main .login-wrapper .inputs-wrapper input {
+  height: 44px;
+  background: #f9f9f9;
+  border: none;
+  border-bottom: 1px solid #ababab;
+  outline: transparent;
+}
+main .login-wrapper .remember_me--forgot_pass {
+  --font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-size);
+}
+main .login-wrapper .remember_me--forgot_pass a {
+  color: black;
+  font-weight: 600;
+  font-size: calc(var(--font-size) - 1px);
+}
+main .login-wrapper .login-btn {
+  font-size: 20px;
+  color: white;
+  margin-top: 53px;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+}
+main .login-wrapper .signup-btn {
+  margin-top: 13px;
+  text-align: center;
+}
+main .login-wrapper .signup-btn span {
+  color: #989898;
+}
+
+/*# sourceMappingURL=style.css.map */
