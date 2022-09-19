@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.23.0"
+  },
+  "name": "library-project2",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JhonatanDP/Library-Project2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JhonatanDP/Library-Project2/issues"
+  },
+  "homepage": "https://github.com/JhonatanDP/Library-Project2#readme",
+  "devDependencies": {
+    "jest": "^29.0.3"
+  }
+}

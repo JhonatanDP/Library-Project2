@@ -1,0 +1,25 @@
+DROP TABLE IF EXISTS books_table;
+DROP TABLE IF EXISTS author_table;
+DROP TABLE IF EXISTS location_table;
+
+CREATE TABLE author_table (
+  id INTEGER AUTO_INCREMENT PRIMARY KEY,
+  first_name VARCHAR(30) NOT NULL,
+  last_name VARCHAR(30) NOT NULL
+);
+
+CREATE TABLE location_table (
+  id INTEGER AUTO_INCREMENT PRIMARY KEY,
+  isle INTEGER NOT NULL,
+  row_letter VARCHAR(5) NOT NULL
+);
+
+CREATE TABLE books_table (
+  id INTEGER AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR (50) NOT NULL,
+  code INTEGER (10) NOT NULL,
+  author_id INTEGER NOT NULL,
+  location_id INTEGER NOT NULL,
+  CONSTRAINT fk_author FOREIGN KEY (author_id) REFERENCES author_table(id) ON DELETE CASCADE,
+  CONSTRAINT fk_location FOREIGN KEY (location_id) REFERENCES location_table(id) ON DELETE CASCADE
+);
