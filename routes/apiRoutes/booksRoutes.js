@@ -53,32 +53,32 @@ router.get('/book/:id', (req, res) => {
   });
 
 
-//   // Create a candidate
-// router.post('/candidate', ({ body }, res) => {
-//     const errors = inputCheck(body, 'first_name', 'last_name', 'industry_connected');
-//     if (errors) {
-//       res.status(400).json({ error: errors });
-//       return;
-//     }
+  // Create a book
+router.post('/book', ({ body }, res) => {
+    const errors = inputCheck(body, 'title', 'code', 'author_id', 'location_id');
+    if (errors) {
+      res.status(400).json({ error: errors });
+      return;
+    }
 
-//     const sql = `INSERT INTO candidates (first_name, last_name, industry_connected)
-//   VALUES (?,?,?)`;
-// const params = [body.first_name, body.last_name, body.industry_connected];
+    const sql = `INSERT INTO books ('title', 'code', 'author_id', 'location_id')
+  VALUES (?,?,?,?)`;
+const params = [body.title, body.code, body.author_id, location_id];
 
-// db.query(sql, params, (err, result) => {
-//   if (err) {
-//     res.status(400).json({ error: err.message });
-//     return;
-//   }
-//   res.json({
-//     message: 'success',
-//     data: body
+db.query(sql, params, (err, result) => {
+  if (err) {
+    res.status(400).json({ error: err.message });
+    return;
+  }
+  res.json({
+    message: 'success',
+    data: body
 
-//   });
+  });
 
-// });
+});
 
-// });
+});
 
 
 
