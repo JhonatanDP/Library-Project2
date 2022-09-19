@@ -1,17 +1,17 @@
-INSERT INTO author_table (first_name, last_name)
+INSERT INTO author (author_name)
 VALUES
- ('Valerio','De Santis'),
- ('Rob','Percival'),
- ('William','Lyon'),
- ('Aristeidis','Bampakos'),
- ('Code','Quickly'),
- ('Mario','Casciaro'),
- ('Craig','Buckler'),
- ('Evan','Hahn'),
- ('Walter','Shileds'),
- ('Vinicius','M. Grippa');
+ ('Valerio De Santis'),
+ ('Rob Percival'),
+ ('William Lyon'),
+ ('Aristeidis Bampakos'),
+ ('Code Quickly'),
+ ('Mario Casciaro'),
+ ('Craig Buckler'),
+ ('Evan Hahn'),
+ ('Walter Shileds'),
+ ('Vinicius M. Grippa');
 
-INSERT INTO location_table (isle, row_letter)
+INSERT INTO location (isle, row_letter)
 VALUES
   (2,'B'),
   (2, 'C'),
@@ -24,7 +24,7 @@ VALUES
   (6,'B'),
   (7,'G');
 
-INSERT INTO books_table (title, code, author_id, location_id)
+INSERT INTO books (title, code, author_id, location_id)
 VALUES
   ('ASP.NET Core 6 and Angular', 1803239700, 1, 2),
   ('JavaScript from Beginner to Professional', 1800562527, 2, 4),
