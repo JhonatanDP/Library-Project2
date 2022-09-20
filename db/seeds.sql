@@ -1,38 +1,12 @@
-INSERT INTO author (author_name)
+INSERT INTO books (title, code, author_name, isle, row_letter)
 VALUES
- ('Valerio De Santis'),
- ('Rob Percival'),
- ('William Lyon'),
- ('Aristeidis Bampakos'),
- ('Code Quickly'),
- ('Mario Casciaro'),
- ('Craig Buckler'),
- ('Evan Hahn'),
- ('Walter Shileds'),
- ('Vinicius M. Grippa');
-
-INSERT INTO location (isle, row_letter)
-VALUES
-  (2,'B'),
-  (2, 'C'),
-  (1,'D'),
-  (5,'A'),
-  (3, 'M'),
-  (4,'V'),
-  (9,'C'),
-  (8, 'A'),
-  (6,'B'),
-  (7,'G');
-
-INSERT INTO books (title, code, author_id, location_id)
-VALUES
-  ('ASP.NET Core 6 and Angular', 1803239700, 1, 2),
-  ('JavaScript from Beginner to Professional', 1800562527, 2, 4),
-  ('Full Stack GraphQL Applications', 1617297038, 3, 3),
-  ('Angular Projects', 1800205260, 4, 2),
-  ('Learn JavaScript Quickly', 1951791479, 5, 8),
-  ('Node.js Design Patterns', 1839214112, 6, 5),
-  ('Node.js: Novice to Ninja', 1925836525, 7, 9),
-  ('Express in Action', 1617292427, 8, 6),
-  ('SQL QuickStart Guide', 1945051752, 9, 1),
-  ('Learning MySQL', 1492085928, 10, 7);
+  ('ASP.NET Core 6 and Angular', 1803239700, 'Valerio De Santis', 2, 'B'),
+  ('JavaScript from Beginner to Professional', 1800562527, 'Rob Percival', 2, 'C'),
+  ('Full Stack GraphQL Applications', 1617297038, 'William Lyon', 1, 'D'),
+  ('Angular Projects', 1800205260, 'Aristeidis Bampakos', 5, 'A'),
+  ('Learn JavaScript Quickly', 1951791479,'Code Quickly', 3, 'M'),
+  ('Node.js Design Patterns', 1839214112, 'Mario Casciaro', 4, 'V'),
+  ('Node.js: Novice to Ninja', 1925836525,'Craig Buckler', 9, 'C'),
+  ('Express in Action', 1617292427, 'Evan Hahn', 8, 'A'),
+  ('SQL QuickStart Guide', 1945051752, 'Walter Shileds', 6, 'B'),
+  ('Learning MySQL', 1492085928, 'Vinicius M. Grippa', 7, 'G');
