@@ -1,0 +1,340 @@
+*
+       /*User Page*/
+
+/*Header*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 16px;
+    font-family:"Roboto", sans-serif;
+}
+    
+              
+    
+    
+nav {
+    
+    display: flex;
+    gap: 10px;
+}
+    
+    
+nav p {
+    display: block;
+    padding: 8px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+nav p.sign-in {
+    background-color: #1E1E1E;
+    color: white;
+}
+
+
+h1 {
+    display: block;
+    font-size: 32px;
+    font-weight: 100px;
+}
+
+
+/*Search*/
+
+main {
+    margin-top: 100px;
+    height: 70%;
+}
+
+.book-notice {
+    display: none;
+    position: relative;
+    height: 100px;
+    background-color: lightcyan;
+    
+}
+.book-notice .title {
+    width: fit-content;
+    margin: 0;
+    transform: rotate(-90deg);
+}
+
+.search-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+    
+    
+.search-container > * {
+    box-shadow: 1px 1px 0px black;
+    border: 1px solid #ccc;
+}
+
+.search-container .search-box {
+    width: 300px;
+    outline: 0;
+}
+
+.search-container .dropdown-list:not(.active) .list {
+    display: none;
+}
+
+.search-container .dropdown-list {
+    user-select: none;
+    --border-radius: 5px;
+    border-radius: var(--border-radius);
+    padding-inline: 12px;
+    cursor: pointer;
+    font-size: 12px;
+    position: relative;
+}
+   
+.search-container .dropdown-list .text {
+    pointer-events: none;
+
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.search-container .dropdown-list .list {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+
+    padding: 10px 20px;
+
+    border-radius: var(--border-radius);
+
+    background-color: lightgreen;
+    width: 100%;
+}
+
+.searched-books {
+    display: flex;
+    gap: 140px;
+    background-color: lightgray;
+    width: 100%;
+    height: 500px;
+    height: 85%;
+    border: 3px solid #ccc;
+    border-radius: 20px;
+    padding: 40px 50px;
+    padding-bottom: 155px;
+    border: 1px solid;
+    box-shadow: 5px 5px 5px #808080;
+}
+    
+
+.searched-books .book {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 150px;
+    gap: 10px;
+    background-size: cover;
+
+}
+    
+.searched-books .book .book--cover {
+    height: 100%;
+}
+
+    
+/* .searched-books .book .ratings {
+
+} */
+
+
+.searched-books .book .title {
+    font-weight: 600;
+}
+
+
+.searched-books .book .add-to-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: transparent;
+    border-radius: 6px;
+    border: 1px solid black;
+    padding-block: 13px;
+    width: 100%;
+}
+
+    
+    
+.add-to-cart {
+    cursor: pointer; 
+}
+
+
+.btn {
+    cursor: pointer;
+}
+
+
+
+
+
+/* Move to script? */
+
+ /* <script>
+document.body.addEventListener("click", (e) => {
+    if (e.target?.matches(".dropdown-list")) e.target.classList.toggle("active");
+});
+</script> */
+
+
+
+
+        
+        /*Login Page*/
+
+/*Header*/
+
+ header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* background-color: lightgrey; */
+    
+ }
+nav {
+    display: flex;
+    gap: 10px;
+} 
+ nav p {
+    display: block;
+    padding: 8px 30px;
+    border-radius: 20px;
+    cursor: pointer; 
+
+ }
+nav p.sign-in {
+    background-color: #1E1E1E;
+    color: white;
+}  
+
+
+/*Login*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+
+
+.form {
+  position: relative;
+  z-index: 1;
+  background: lightgray;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 5px 5px 5px #808080;
+}
+  
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: black;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+
+
+.form .message a {
+  color: black;
+  text-decoration: none;
+}
+
+
+.form .register-form {
+  display: none;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: black;
+}
+
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+
+.container .info span a {
+  color: black;
+  text-decoration: none;
+}
+
+
+body {
+  background: black; /* fallback for old browsers */
+  background: white;
+  /* background: linear-gradient(90deg, rgba(141,194,111,1) 0%, rgba(118,184,82,1) 50%); */
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+}
+    
+    
