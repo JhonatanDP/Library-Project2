@@ -47,6 +47,9 @@
         </div>
         <div class="search-container">
             <input type="text" placeholder="Search for a book" class="search-box" />
+            <button type="submit">
+                Search
+              </button>
             <div class="filter dropdown-list">
                 <div class="text">
                     <p>Filter</p>
@@ -121,14 +124,16 @@
             align-items: center;
             justify-content: space-between;
             width: 100%;
-            background-color: lightgrey;
-            
-            
-            
-            
-            
-            
+            /* background-color: lightgrey; */
+            font-size: 16px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif; 
+                      
         }
+            
+            
+            
+            
+            
         nav {
             display: flex;
             gap: 10px;
@@ -144,12 +149,23 @@
             color: white;
         }
 
+        h1 {
+            display: block;
+            font-size: 32px;
+            font-weight: 100px;
+            
+            
+
+        }
+
+
+
 
 /*Search*/
-
+/* 
               {
                 box-sizing: border-box;
-            }
+            } */
             main {
                 margin-top: 100px;
                 height: 70%;
@@ -179,7 +195,7 @@
             }
             
             .search-container .search-box {
-                width: 400px;
+                width: 300px;
                 outline: 0;
             }
             .search-container .dropdown-list:not(.active) .list {
@@ -259,6 +275,11 @@
                 /* height: 40px; */
                 padding-block: 13px;
                 width: 100%;
+                
+            }
+
+            .button {
+                border-radius: 6px;
                 
             }
         </style>
