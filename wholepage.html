@@ -1,189 +1,281 @@
 <!DOCTYPE html>
-    <html lang="en-US">
-      <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width", initial-scale="1.0"/>
-        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <script src="https://kit.fontawesome.com/3340e9f285.js" crossorigin="anonymous"></script> 
-        <script src="https://necolas.github.io/normalize.css/8.0.1/normalize.css"></script>
-        <title>Welcome to Library 2.0</title>
-        <link rel="stylesheet" href=" "> <!--ADD CSS-->
-      </head>
-    
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./header/index.css" />
+        <title>Welcome to Library 2.0 </title>
+    </head>
+
+<script src="https://kit.fontawesome.com/3340e9f285.js" crossorigin="anonymous"></script> 
+<script src="https://necolas.github.io/normalize.css/8.0.1/normalize.css"></script>
+<header>
+    <h1>
+        <span>
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 16 16"
+            >
+                <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="m5 2.5l.5-.5h2l.5.5v11l-.5.5h-2l-.5-.5v-11zM6 3v10h1V3H6zm3.171.345l.299-.641l1.88-.684l.64.299l3.762 10.336l-.299.641l-1.879.684l-.64-.299L9.17 3.345zm1.11.128l3.42 9.396l.94-.341l-3.42-9.397l-.94.342zM1 2.5l.5-.5h2l.5.5v11l-.5.5h-2l-.5-.5v-11zM2 3v10h1V3H2z"
+                    clip-rule="evenodd"
+                />
+            </svg>
+        </span>
+        Library 2.0
+    </h1>
+    <nav>
+        <p>Search</p>
+        <p>Contacts</p>
+        <p>Get A Library Card</p>
+        <p>Donate</p>
+        <p><i class="fa-solid fa-cart-shopping"></i> Cart</p> 
+        <p class="sign-in">Sign In</p>
+    </nav>
+   </header> 
+
+   <body>
+    <main>
+        <div class="book-notice">
+            <p class="title">Bestsellers</p>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search for a book" class="search-box" />
+            <div class="filter dropdown-list">
+                <div class="text">
+                    <p>Filter</p>
+                    <img src="./assets/filter.svg" alt="" />
+                </div>
+                <div class="list">
+                    <p>Filter</p>
+                    <p>Filter</p>
+                    <p>Filter</p>
+                    <p>Filter</p>
+                </div>
+            </div>
+            <div class="sort dropdown-list">
+                <div class="text">
+                    <p>Sort</p>
+                    <img src="./assets/arrow-sort-24-regular.svg" alt="" />
+                </div>
+                <div class="list">
+                    <p>Sort</p>
+                    <p>Sort</p>
+                    <p>Sort</p>
+                    <p>Sort</p>
+                </div>
+            </div>
+        </div>
+        <div class="searched-books">
+            <div class="book">
+                <img src="./assets/images/content (1).jpg" alt="" class="book--cover" />
+                <div class="details">
+                    <div class="ratings"></div>
+                    <div class="title">Project Jackalope</div>
+                    <p class="author">Emily Ectron</p>
+                </div>
+                <button class="add-to-cart">
+                    <img src="./assets/images/add to cart.svg" class="icon" />
+                    Add to Cart
+                </button>
+            </div>
+            <div class="book">
+                <img src="./assets/images/content (1).jpg" alt="" class="book--cover" />
+                <div class="details">
+                    <div class="ratings"></div>
+                    <div class="title">Project Jackalope</div>
+                    <p class="author">Emily Ectron</p>
+                </div>
+                <button class="add-to-cart">
+                    <img src="./assets/images/add to cart.svg" class="icon" />
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </main>
+   </body>
 
     
-      <header>
-        <h1>
-            <span>
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="1em"
-                    height="1em"
-                    preserveAspectRatio="xMidYMid meet"
-                    viewBox="0 0 16 16"
-                >
-                    <path
-                        fill="currentColor"
-                        fill-rule="evenodd"
-                        d="m5 2.5l.5-.5h2l.5.5v11l-.5.5h-2l-.5-.5v-11zM6 3v10h1V3H6zm3.171.345l.299-.641l1.88-.684l.64.299l3.762 10.336l-.299.641l-1.879.684l-.64-.299L9.17 3.345zm1.11.128l3.42 9.396l.94-.341l-3.42-9.397l-.94.342zM1 2.5l.5-.5h2l.5.5v11l-.5.5h-2l-.5-.5v-11zM2 3v10h1V3H2z"
-                        clip-rule="evenodd"
-                    />
-                </svg>
-            </span>
-            Library 2.0
-        </h1>
-        <nav>
-            <p>Search</p>
-            <p>Contacts</p>
-            <p>Get A Library Card</p>
-            <p><i class="fa-solid fa-hand-holding-dollar"></i> Donate</p>
-            <p><i class="fa-solid fa-cart-shopping"></i> Cart</p> 
-            <p class="sign-in">Sign In</p>
-        </nav>
-    </header>
-
-<!--Body-->
-<body>
-
-    <div class="container">
-    <div class="row">
-        <div class="team-area col-12 d-flex justify-content-center">
-            <div class="card employee-card">
-<div class="card-header bg-secondary">
-    <h2 class="card-title text-black"></h2>
-    <h3 class="card-title text-black"></i> Welcome to Library 2.0</h3>
-</div>
-<div class="card-body">
-    <ul class="list-group">
-        <p class="list-group-item"><b>N/A:</b></p>
-        <p class="list-group"><b>Search Book:</b> <a href="mailto:testing">N/A</a></p>
-        <p class="list-group-item"><b>N/A</b></p>
-    </ul>
-</div>
-</div>
 
 
 
-  
-    
-    </body>
-</html>
+
+
+
+
+
+
+
+
+
+<!--Header-->
+    <style>
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            background-color: lightgrey;
+            
+            
+            
+            
+            
+            
+        }
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+        nav p {
+            display: block;
+            padding: 8px 30px;
+            border-radius: 20px;
         
-          
-    
-    
-    
+        }
+        nav p.sign-in {
+            background-color: #1E1E1E;
+            color: white;
+        }
 
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+/*Search*/
 
+<style>
+            * {
+                box-sizing: border-box;
+            }
+            main {
+                margin-top: 100px;
+                height: 70%;
+            }
 
+            .book-notice {
+                display: none;
+                position: relative;
+                height: 100px;
+                background-color: lightcyan;
+            }
+            .book-notice .title {
+                width: fit-content;
+                margin: 0;
+                transform: rotate(-90deg);
+            }
 
+            .search-container {
+                display: flex;
+                /* align-items: center; */
+                gap: 20px;
+                margin-bottom: 30px;
+            }
+            .search-container > * {
+                box-shadow: 1px 1px 0px black;
+                border: 1px solid #ccc;
+            }
+            
+            .search-container .search-box {
+                width: 400px;
+                outline: 0;
+            }
+            .search-container .dropdown-list:not(.active) .list {
+                display: none;
+            }
+            .search-container .dropdown-list {
+                user-select: none;
+                --border-radius: 5px;
+                border-radius: var(--border-radius);
+                /* background-color: lightblue; */
+                padding-inline: 12px;
 
+                font-size: 12px;
+                position: relative;
+            }
+            .search-container .dropdown-list .text {
+                pointer-events: none;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-    
-    
-    
-    
-    
-    
-    <!--Move this into style.css file-->  
-        <style>
-            header {
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
+                gap: 7px;
+            }
+            .search-container .dropdown-list .list {
+                position: absolute;
+                top: calc(100% + 10px);
+                left: 0;
+
+                padding: 10px 20px;
+
+                border-radius: var(--border-radius);
+
+                background-color: lightgreen;
                 width: 100%;
-                background-color: lightgrey;
-                
-                
-                
-                
-                
-                
             }
-            nav {
+
+            .searched-books {
                 display: flex;
+                gap: 150px;
+
+                width: 100%;
+                height: 500px;
+                height: 85%;
+                border: 1px solid #ccc;
+                box-shadow: 1px 1px 1px black;
+                /* background-color: lightcoral; */
+                border-radius: 3px;
+                padding: 40px 50px;
+                padding-bottom: 150px;
+            }
+
+            .searched-books .book {
+                display: flex;
+                flex-direction: column;
+                height: 200px;
+                width: 150px;
                 gap: 10px;
+                /* background-image: url("./assets/images/content\ \(1\).jpg"); */
+                background-size: cover;
             }
-            nav p {
-                display: block;
-                padding: 8px 30px;
-                border-radius: 20px;
-            
+            .searched-books .book .book--cover {
+                height: 100%;
             }
-            nav p.sign-in {
-                background-color: #1E1E1E;
-                color: white;
+            .searched-books .book .ratings {
             }
+            .searched-books .book .title {
+                font-weight: 600;
+            }
+            .searched-books .book .add-to-cart {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
 
-
-            .employee-card {
-    box-shadow: 5px 5px 5px #808080 ;
-    margin: 2rem;
-    border: none;
-}
-
-.card-body {
-    background-color: rgb(240, 246, 240);
-}
+                background-color: transparent;
+                border-radius: 6px;
+                border: 1px solid black;
+                /* height: 40px; */
+                padding-block: 13px;
+                width: 100%;
+                
+            }
         </style>
+
+        <script>
+            document.body.addEventListener("click", (e) => {
+                if (e.target?.matches(".dropdown-list")) e.target.classList.toggle("active");
+            });
+        </script>
+
+
+
+
+    </style>
+
+
+
+
     
-    
-         
