@@ -1,0 +1,32 @@
+<main>
+  {{#if hasProducts}}
+    <form class="search_books_form" action="/?search">
+      <input
+        type="text"
+        placeholder="Search.. Title, Code, Author Name, ID"
+        name="search"
+        id="search"
+        value="{{this.searchTerm}}"
+      />
+      <button type="submit">Search</button>
+    </form>
+
+    <div class="grid">
+      {{#each prods}}
+        <article class="card product-item">
+          <header class="card__header">
+            <h1 class="product__title">{{this.title}}</h1>
+          </header>
+          <div class="card__content">
+            <span>Author Name: {{this.author_name}}</span>
+            <br />
+            <span>Code: {{this.code}}</span>
+          </div>
+        </article>
+      {{/each}}
+    </div>
+
+  {{else}}
+    <h1>No Products Found!</h1>
+  {{/if}}
+</main>
