@@ -17,7 +17,7 @@ const Book = sequelize.define("book", {
     },
   },
   code: {
-    type: Sequelize.STRING,
+    type: Sequelize.INTEGER,
     allowNull: false,
     validate: {
       len: [1, 10]
@@ -39,8 +39,11 @@ const Book = sequelize.define("book", {
     allowNull: false,
     validate: {
       len: [1, 5]
-    }
+    },
   }
+
+}, {
+    timestamps: false
 });
 
 module.exports = Book;
