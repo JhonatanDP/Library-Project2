@@ -95,24 +95,24 @@ main {
    
 .search-container .dropdown-list .text {
     pointer-events: none;
-
     display: flex;
     align-items: center;
     gap: 7px;
 }
 
-.search-container .dropdown-list .list {
+/*Filter and Sort*/
+.search-container .dropdown-list .list  {
     position: absolute;
     top: calc(100% + 10px);
     left: 0;
-
     padding: 10px 20px;
-
     border-radius: var(--border-radius);
-
     background-color: lightgreen;
     width: 100%;
 }
+
+
+
 
 .searched-books {
     display: flex;
