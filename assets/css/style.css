@@ -203,9 +203,9 @@ document.body.addEventListener("click", (e) => {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    /* background-color: lightgrey; */
+}
     
- }
+    
 nav {
     display: flex;
     gap: 10px;
