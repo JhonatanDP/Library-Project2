@@ -40,10 +40,6 @@ const Book = sequelize.define("book", {
     validate: {
       len: [1, 5]
     }
-  },
-  img_url: {
-    type: Sequelize.STRING,
-    allowNull: true
   }
 });
 
