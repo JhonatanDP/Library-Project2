@@ -1,0 +1,41 @@
+.login_form_container {
+    display        : flex;
+    justify-content: center;
+    padding        : 50px;
+}
+
+.login_form_wrapper {
+    display        : flex;
+    width          : 25%;
+    justify-content: center;
+}
+
+.login_form {
+    width         : 100%;
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+}
+
+.form_control {
+    width          : 100%;
+    text-align-last: justify;
+    margin-bottom  : 10px;
+}
+
+.login_form_button {
+    float      : left;
+    width      : 100%;
+    padding    : 10px;
+    background : #2196F3;
+    color      : white;
+    font-size  : 17px;
+    border     : 1px solid grey;
+    border-left: none;
+    /* Prevent double borders */
+    cursor     : pointer;
+}
+
+.login_form_button:hover {
+    background: #0b7dda;
+}

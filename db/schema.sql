@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS books;
+
+CREATE TABLE books(
+  id INTEGER AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR (50) NOT NULL,
+  code INTEGER (10) NOT NULL,
+ author_name VARCHAR(30) NOT NULL,
+  isle INTEGER NOT NULL,
+  row_letter VARCHAR(5) NOT NULL,
+ UNIQUE (title)
+);
