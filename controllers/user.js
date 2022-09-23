@@ -42,12 +42,12 @@ exports.loginPost = (req, res, next) => {
 
   User.findOne({ where: { username: username } }).then(function (user) {
     if (!user) {
-      res.redirect("/login", {
+      res.redirect("login", {
         pageTitle: "Login",
         path: "/login",
       });
     } else if (!user.validPassword(password)) {
-      res.redirect("/login", {
+      res.redirect("login", {
         pageTitle: "Login",
         path: "/login",
       });

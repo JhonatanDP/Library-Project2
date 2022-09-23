@@ -19,9 +19,9 @@ const Book = sequelize.define("book", {
   code: {
     type: Sequelize.INTEGER,
     allowNull: false,
-    validate: {
-      len: [1, 10]
-    }
+    // validate: {
+    //   len: [1, 10]
+    // }
   },
   author_name: {
     type: Sequelize.STRING,
