@@ -10,7 +10,7 @@ With our huge selection of books, there's something for everyone! So start searc
 <br/>
 Thank you for choosing our Library 2.0! <br/>
 
-## Instroctions
+## Instructions
 
 1 In the top search bar, type in the title, author, or keyword of the book you are looking for. Then, select the option you would like to search by from the drop-down menu to the right of the search bar (Title, Author, or Keyword). <br/>
 2 After selecting your preferred search method, hit the blue "Search" button to the right of the drop-down menu. <br/>
@@ -22,3 +22,11 @@ Thank you for choosing our Library 2.0! <br/>
 
 
 ![home_page](https://user-images.githubusercontent.com/45743294/191878677-048b0391-68d5-4b17-ba11-f1c045b80e4e.png)
+
+### Sign Up page
+
+![Signup_page](https://user-images.githubusercontent.com/45743294/191879768-2f258ea5-0433-47ff-ada4-f7cc8206d04c.png)
+
+### Login page
+
+![unnamed](https://user-images.githubusercontent.com/45743294/191879873-7c38f81e-b20f-4995-bae2-5a4de40ef2bd.png)
